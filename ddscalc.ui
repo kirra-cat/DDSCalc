@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DDSCalc</class>
+ <widget class="QMainWindow" name="DDSCalc">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>439</width>
+    <height>326</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>390</width>
+    <height>300</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>DDSCalc</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>391</width>
+     <height>340</height>
+    </size>
+   </property>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>130</y>
+      <width>441</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Режим ЛЧМ</string>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>421</width>
+       <height>146</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item row="0" column="1" colspan="3">
+       <widget class="QLineEdit" name="lineEdit_6"/>
+      </item>
+      <item row="0" column="4">
+       <widget class="QRadioButton" name="radioButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" rowspan="2" colspan="3">
+       <widget class="QLineEdit" name="lineEdit_7"/>
+      </item>
+      <item row="3" column="1" colspan="3">
+       <widget class="QLineEdit" name="lineEdit_8"/>
+      </item>
+      <item row="3" column="4">
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QLabel" name="label_7">
+        <property name="text">
+         <string>Продолжительность ЛЧМ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QLineEdit" name="lineEdit_9"/>
+      </item>
+      <item row="4" column="2">
+       <widget class="QLineEdit" name="lineEdit_10"/>
+      </item>
+      <item row="4" column="3" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_11"/>
+      </item>
+      <item row="5" column="0">
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Приращение ЛЧМ</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QLineEdit" name="lineEdit_12"/>
+      </item>
+      <item row="5" column="2">
+       <widget class="QLineEdit" name="lineEdit_13"/>
+      </item>
+      <item row="5" column="3" colspan="2">
+       <widget class="QLineEdit" name="lineEdit_14"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Девиация [кГц]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="text">
+         <string>Длительность [мкс]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="4" rowspan="2">
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" rowspan="2">
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Крутизна [кГц/мкс]</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>300</y>
+      <width>120</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Добавлять &quot;0x&quot;</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>300</y>
+      <width>148</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>В верхнем регистре</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>1</x>
+      <y>1</y>
+      <width>441</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Без модуляции</string>
+    </property>
+    <widget class="QWidget" name="">
+     <property name="geometry">
+      <rect>
+       <x>12</x>
+       <y>31</y>
+       <width>418</width>
+       <height>86</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <property name="sizeConstraint">
+       <enum>QLayout::SetMaximumSize</enum>
+      </property>
+      <item row="2" column="0">
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Код для DDS</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>Выходная частота [МГц]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="3">
+       <widget class="QLineEdit" name="lineEditFrequencyOutput"/>
+      </item>
+      <item row="0" column="0">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Опорная частота [МГц]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="3">
+       <widget class="QLineEdit" name="lineEditFrequencyReference"/>
+      </item>
+      <item row="2" column="1">
+       <widget class="QLineEdit" name="lineEditDDSCodeH"/>
+      </item>
+      <item row="2" column="3">
+       <widget class="QLineEdit" name="lineEditDDSCodeL"/>
+      </item>
+      <item row="2" column="2">
+       <widget class="QLineEdit" name="lineEditDDSCodeM"/>
+      </item>
+     </layout>
+    </widget>
+    <zorder>label</zorder>
+    <zorder>lineEditFrequencyReference</zorder>
+    <zorder>label</zorder>
+    <zorder>label_2</zorder>
+    <zorder>label_3</zorder>
+    <zorder>lineEditFrequencyReference</zorder>
+    <zorder>lineEditFrequencyOutput</zorder>
+    <zorder>lineEditDDSCodeH</zorder>
+    <zorder>lineEditDDSCodeM</zorder>
+    <zorder>lineEditDDSCodeL</zorder>
+    <zorder>groupBox_2</zorder>
+   </widget>
+   <zorder>layoutWidget</zorder>
+   <zorder>label</zorder>
+   <zorder>groupBox_2</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
