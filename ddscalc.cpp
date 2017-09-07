@@ -3,6 +3,7 @@
 #include "dds.h"
 
 #include <QClipboard>
+#include <QDebug>
 
 DDSCalc::DDSCalc(QWidget *parent) :
     QMainWindow(parent),
@@ -51,16 +52,16 @@ void DDSCalc::updateFrequencyToCodeDDS()
                     templateOutputString.append("0x") : templateOutputString.append("");
 
         templateOutputString = (ui->checkBoxUpperCase->checkState() == Qt::Checked) ?
-                    templateOutputString.append("%1.4X") : templateOutputString.append("%1.4x");
+                    templateOutputString.append("%0.4X") : templateOutputString.append("%0.4x");
 
         ui->lineEditDDSCodeH->setText(QString().sprintf(templateOutputString.toStdString().c_str(),
-                                                        dds->frequencyToCode().codeH));
+                                                        (qint16)dds->frequencyToCode().codeH));
 
         ui->lineEditDDSCodeM->setText(QString().sprintf(templateOutputString.toStdString().c_str(),
-                                                        dds->frequencyToCode().codeM));
+                                                        (qint16)dds->frequencyToCode().codeM));
 
         ui->lineEditDDSCodeL->setText(QString().sprintf(templateOutputString.toStdString().c_str(),
-                                                        dds->frequencyToCode().codeL));
+                                                        (qint16)dds->frequencyToCode().codeL));
     }
 }
 

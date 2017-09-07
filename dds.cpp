@@ -43,9 +43,9 @@ outputCodeFrequency DDS::frequencyToCode()
         code = ~code + 1;
     }
 
-    outputCode.codeH = (qint16) ((code >> 32) & 0xffff);
-    outputCode.codeM = (qint16) ((code >> 16) & 0xffff);
-    outputCode.codeL = (qint16) (code & 0xffff);
+    outputCode.codeH = fabs((qint16) ((code >> 32) & 0xffff));
+    outputCode.codeM = fabs((qint16) ((code >> 16) & 0xffff));
+    outputCode.codeL = fabs((qint16) (code & 0xffff));
 
     return outputCode;
 }
